@@ -1,0 +1,217 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+
+}
+body{
+    background-image: url("/images/bg-body.png");
+    padding: 15px 10px 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* header */
+.main-header{
+text-align: center;
+}
+
+.main-header .logo{
+    border-radius: 50%;
+}
+
+.main-header .toggle-nav {
+    display: block;
+    border-radius: 2px;
+margin: 20px auto 15px auto;
+color: black;
+background-color: grey;
+width: fit-content;
+height: fit-content; /* fit content centra todo pero igual debo hight y wheyyf */
+padding: 10px;
+text-align: center;
+}
+.main-header .main-nav{
+    margin: 20px 0;
+}
+
+.main-header .main-nav ul li{
+    background-color:grey;
+    text-transform: uppercase;
+    margin: 2px auto 2px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+/* banner */
+.banner{
+    margin-top: 10px;
+    display: none;
+}
+
+/* product /articles */
+.vip-products .product{
+    max-width: 371.5px;
+    padding-bottom: 0px;
+} /* EDIMOS QUE SE AJUSTEN LOS PRODUCT AL 100 SIEMPRE Y CUANDO LLEGUE HASTA 380 */
+
+.vip-products .product h2 {
+    margin: 15px 0;
+}
+
+.vip-products .product p{
+    color: grey;
+    margin-bottom: 25px;
+
+}
+
+.vip-products .product a.more{
+    background-color: grey;
+    text-align: center;
+    width: 95px;
+    margin-top: 10px;
+ padding: 7px;
+    display: block;
+}
+.vip-products .product .photo-container{
+    position: relative;
+    margin-top: 5px;
+}
+
+.vip-products .product .photo-container .special{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.vip-products .product .photo-container img.photo{
+width: 100%;
+}
+.vip-products .product .photo-container .zoom{
+    position: absolute;
+    top: 48%;
+    left: 0px;
+    background-color: rgba(0,0,0, 0.5);
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: fantasy;
+    padding: 5px;
+}
+
+.main-footer ul li{ 
+    background-color: brown;
+    text-transform:uppercase;
+    display: block;
+    margin: 5px auto 5px auto;
+    color: black;
+    padding: 2px;
+    text-align: center;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .banner{
+        display: block;
+        width: 100%; /* Se adapta al ancho de la pantalla
+    */} 
+    .banner img{
+        width: 100%;
+    }
+    .vip-products .product{
+        display: inline-block;
+        width: 49.76%;
+       
+    }
+    .main-header .toggle-nav {
+        display:none;
+    }
+   
+   .main-header .main-nav ul li {
+       display:inline-block;
+       padding:7px 7px;
+       margin-bottom: 0px;
+       margin-right: 9.5px;
+       width: 113px;
+       font-size: 14px;
+    
+   }
+   .main-header .main-nav ul li:last-child{
+       margin-right: 0;
+   } /* lastchild me permite emitir o modificar el ultimo valor de la LI "contacto" */
+   .banner{
+       display: inline-block;
+   }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1180px){
+    .container{
+        max-width: 1180px;
+    }
+ 
+    .main-header .logo {
+        width: 180px;
+    }
+    .main-header .main-nav {
+        margin: 30px 0 20px 0;
+    }
+    .main-header .main-nav ul li{
+        margin-right: 9.5px;
+        padding: 7px 15px;
+        width: 180px;
+    }
+    
+.vip-products {
+  
+    text-align: center;
+ }
+ .vip-products .product{
+     max-width: 380px;
+     margin-right: 15px;
+ }
+ .vip-products .product:nth-child(3n)
+  {
+ margin-right: 0;
+  }
+/* footer */
+    .main-footer ul li{ 
+        display: inline;
+        padding:5px;
+        margin-top: 25px;
+    }
+.main-footer ul{
+    padding:50px;
+    background-color: brown;
+    border-radius: 30px 30px 0 0;
+    margin-top: 10px;
+    text-align: center;
+    height: 30px;
+}
+.main-footer ul a{
+    text-transform:capitalize;
+    font-size: 15px;
+    margin: 5px;
+    
+}
+
+.main-footer ul li{
+    border-right: 3px solid white;
+}
+
+#contacto{
+    border: none;
+}
+
+}
+
